@@ -137,7 +137,7 @@ h1 {
 }
 
 .dropdown-menu button:hover {
-    background-color: #f2f4f8; /* Light neutral background */
+    background-color: #f2f4f8; 
 }
 
 
@@ -145,6 +145,14 @@ h1 {
 .save-btn,
 .cancel-btn {
     padding-left: 10px !important; 
+}
+
+.footer-text {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #555; 
+    font-style: italic; 
 }
 
 .save-btn:hover,

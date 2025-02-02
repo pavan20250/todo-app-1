@@ -138,6 +138,8 @@ const TodoList = () => {
                     </li>
                 ))}
             </ul>
+            <p className="footer-text">© {new Date().getFullYear()} Pavan. All rights reserved.</p>
+
         </div>
     );
 };
