@@ -1,6 +1,6 @@
 # To-Do App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and integrated with **Appwrite** as the backend service for handling user authentication, database management, and more.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and integrated with **Appwrite** as the backend service for handling database management, and more.
 
 ## Available Scripts
 
@@ -47,9 +47,8 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 Appwrite has been integrated as the backend for this project to handle user authentication, database operations, and more.
 
-1. **Authentication**: Appwrite's authentication service is used to manage user signups, logins, and email verifications. The app allows users to create accounts, verify emails, and log in securely using Appwrite's easy-to-use API.
-2. **Database**: The app uses Appwrite's database service to manage and store application data, such as user details, articles, or any other necessary entities.
-3. **Appwrite Client Configuration**: In the project, the Appwrite client has been configured in the `appwrite config.ts` file. This includes connecting to the Appwrite server using the project ID and endpoint URL.
+1. **Database**: The app uses Appwrite's database service to manage and store application data, such as user details, articles, or any other necessary entities.
+2. **Appwrite Client Configuration**: In the project, the Appwrite client has been configured in the `appwrite config.ts` file. This includes connecting to the Appwrite server using the project ID and endpoint URL.
 
 ### Connection Setup
 
