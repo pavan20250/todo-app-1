@@ -154,7 +154,65 @@ h1 {
     color: #555; 
     font-style: italic; 
 }
+/* Highlight the todo item being edited */
+.todo-item.editing {
+    background-color: #e8f5e9; 
+    border: 1px solid #4caf50; 
+    box-shadow: 0 2px 8px rgba(76, 175, 80, 0.3); 
+    transform: scale(1.02); 
+    transition: all 0.3s ease; 
+}
 
+/* Input field while editing */
+.todo-item.editing .edit-input {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #dfe4ea;
+    border-radius: 6px;
+    background-color: #ffffff;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.todo-item.editing .edit-input:focus {
+    border-color: #4caf50; 
+}
+
+/* Save and Cancel buttons while editing */
+.todo-item.editing .save-btn,
+.todo-item.editing .cancel-btn {
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.todo-item.editing .save-btn {
+    background-color: #4caf50; 
+    color: white;
+}
+
+.todo-item.editing .save-btn:hover {
+    background-color: #388e3c; 
+}
+
+.todo-item.editing .cancel-btn {
+    background-color: #f44336; 
+    color: white;
+}
+
+.todo-item.editing .cancel-btn:hover {
+    background-color: #d32f2f; 
+}
+
+/* Disable other buttons while editing (optional) */
+.todo-item.editing .menu-button,
+.todo-item.editing .dropdown-menu button {
+    opacity: 0.5; 
+    pointer-events: none; 
+}
 .save-btn:hover,
 .cancel-btn:hover{
    opacity:.9
