@@ -1,0 +1,156 @@
+/* General Container */
+.todo-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #f2f4f8;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Inter', sans-serif;
+}
+
+/* Title */
+h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #2c3e50; 
+    margin-bottom: 20px;
+}
+
+/* Input and Add Button */
+.todo-input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.todo-input-container input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #dfe4ea; 
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #ffffff; 
+}
+
+.todo-input-container button {
+    padding: 12px 18px;
+    border: none;
+    background-color: #4caf50; 
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.todo-input-container button:hover {
+    background-color: #388e3c;
+    transform: scale(1.05);
+}
+
+/* Todo List */
+.todo-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff; 
+    padding: 14px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.todo-item:hover {
+    transform: translateY(-2px);
+}
+
+/* Todo Text */
+.todo-text {
+    flex-grow: 1;
+    font-size: 16px;
+    color: #34495e; 
+}
+
+.todo-text.completed {
+    text-decoration: line-through;
+    color: #95a5a6; 
+}
+
+/* Buttons Container */
+.todo-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.todo-buttons button {
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+
+
+/* Editing Mode */
+.edit-input {
+    flex-grow: 1;
+    padding-left: 10px;
+}
+
+.menu-container {
+    position: relative;
+}
+
+.menu-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    background-color: #ffffff;
+    border: 1px solid #dfe4ea;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.dropdown-menu button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+}
+
+.dropdown-menu button:hover {
+    background-color: #f2f4f8; /* Light neutral background */
+}
+
+
+/* Save and Cancel Buttons */
+.save-btn,
+.cancel-btn {
+    padding-left: 10px !important; 
+}
+
+.save-btn:hover,
+.cancel-btn:hover{
+   opacity:.9
+}
+/* Responsive Design */
+@media (max-width:600){
+}
